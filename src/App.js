@@ -1,36 +1,25 @@
-import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Navbar from './components/Navigation/Navbar'
-import Login from './Pages/Login';
-import Wishlist from './Pages/Wishlist';
-import Home from './Pages/Home';
-import { Routes } from './Routes';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Nav from './components/nav';
+import Main from './components/main';
+import Footer from './components/footer';
+import About from './components/about';
+import Contact from './components/contact';
+import Admin from './components/Admin/Admin';
 
-function App() {
+export default function App() {
   return (
-    <div >
-      <Navbar/>
-      <Switch>
-        <Route path="/">
-        <Login/>
-        </Route>
-        <Route path="/auth">
-          <Login/>
-        </Route>
-        <Route path="/wishlist">
-          <Wishlist/>
-        </Route>
-      </Switch>
+    <div className="App">
+      <BrowserRouter>
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/admin" element={<Admin />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
-
-function AppWrapper() {
-  return (
-    <Router>
-      <App />
-    </Router>
-  );
-}
-
-export default AppWrapper;

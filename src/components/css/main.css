@@ -1,0 +1,42 @@
+.main-container {
+    background-image: url('../images/main-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+  
+  .main-content {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-top: 100px;
+    max-width: 1200px;
+    margin-left: 100px ;
+    
+    /* padding: 20px; */
+  }
+  
+  .left-container {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+  }
+  
+  .right-container {
+    flex: 1;
+  }
+
+  
+.main-title {
+  font-size: 4rem;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.main-description {
+  font-size: 1.5rem;
+  color: #000000;
+}

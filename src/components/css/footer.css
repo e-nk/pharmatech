@@ -1,0 +1,27 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #7aa0d8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    
+  }
+  
+  .social-icons a {
+    /* margin-left: 10px; */
+    margin-left: 80px;
+  }
+  
+  .contact p {
+    margin: 0;
+    margin-right: 80px;
+  }
+  
