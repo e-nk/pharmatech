@@ -6,6 +6,8 @@ import Footer from './components/footer';
 import About from './components/about';
 import Contact from './components/contact';
 import Admin from './components/Admin/Admin';
+import Wishlist from './pages/Wishlist';
+import Cart from './pages/Cart';
 
 export default function App() {
   return (
@@ -16,6 +18,8 @@ export default function App() {
           <Route path="/" element={<Main />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/wishlist" element={<Wishlist/>} />
+          <Route path='cart' element={<Cart/>}/>
           <Route path="/admin" element={<Admin />} />
         </Routes>
         <Footer />
