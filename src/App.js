@@ -8,6 +8,7 @@ import Contact from './components/contact';
 import Admin from './components/Admin/Admin';
 import Wishlist from './pages/Wishlist';
 import Cart from './pages/Cart';
+import Login from './pages/Login';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/wishlist" element={<Wishlist/>} />
           <Route path='cart' element={<Cart/>}/>
+          <Route path='auth' element={<Login/>}/>
           <Route path="/admin" element={<Admin />} />
         </Routes>
         <Footer />
